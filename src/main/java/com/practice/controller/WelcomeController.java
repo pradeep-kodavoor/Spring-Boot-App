@@ -1,20 +1,20 @@
-package com.practise.springboot.controller;
+package com.practice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.practise.springboot.service.WelcomeService;
+import com.practice.service.WelcomeService;
 
 @RestController
 public class WelcomeController {
 
+	// Auto wiring
 	@Autowired
-	private WelcomeService welcomeService;
-	
+	private WelcomeService service;
+
 	@RequestMapping("/welcome")
 	public String welcome() {
-		return welcomeService.getWelcomeMessage();
+		return service.retrieveWelcomeMessage();
 	}
-	
 }

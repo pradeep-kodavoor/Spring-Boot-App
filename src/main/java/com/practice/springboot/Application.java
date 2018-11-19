@@ -1,4 +1,4 @@
-package com.practise.springboot;
+package com.practice.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.in28minutes.springboot")
+@ComponentScan("com.practice")
 public class Application {
 
 	public static void main(String[] args) {
